@@ -31,7 +31,7 @@ public class Cliente {
     }
 
     public boolean recarga(int valor){
-        if (this.conta.getSaldo() <= valor){
+        if (this.conta.getSaldo() < valor){
             return tentativaRecarga = false;
         }else{
             this.conta.setRecarga(valor);
